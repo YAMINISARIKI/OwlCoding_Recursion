@@ -1,3 +1,5 @@
+//In permutations repetition is not allowed.
+
 #include<bits/stdc++.h>
 using namespace std;
 void combinationsum(int index,int arr[],int n,int k,vector<int>&ds)
