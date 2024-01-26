@@ -18,10 +18,10 @@ void combinationsum(int index,int arr[],int n,int k,vector<int>&ds)
     if(arr[index]<=k)
     {
         ds.push_back(arr[index]);
-        k = k-arr[index];
+        k = k-arr[index]; //if we pick the element we have subtract that element from k to get values for remaining k value.
         combinationsum(index,arr,n,k,ds); //if we have chance to pick multiple times
         // combinationsum(index+1,arr,n,k,ds); //if we have chance to pick element only once
-        k = k+arr[index];
+        k = k+arr[index]; // if we don't pick element then we have to carry previous value to next step of non pick side.
         ds.pop_back();
     }
     
