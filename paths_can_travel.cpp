@@ -27,7 +27,7 @@ void ratinmaz(int i,int j,int n,int m,vector<vector<char>>&grid,vector<vector<in
     path[i][j]=1;
     ratinmaz(i,j+1,n,m,grid,path);
     ratinmaz(i+1,j,n,m,grid,path);
-    path[i][j]=1;
+    path[i][j]=0;
 }
 int main()
 {
